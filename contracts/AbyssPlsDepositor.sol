@@ -42,9 +42,9 @@ contract AbyssPlsDepositor is ReentrancyGuard, Pausable, Ownable {
      */
     constructor(bool mainnet, address depositContract_) {
         if (mainnet) {
-            depositContract = IDepositContract(0x3693693693693693693693693693693693693693);
+            depositContract = IDepositContract(0xeD9aE17bDAB18bd71B1cf0283933A1F43507c09E);
         } else if (depositContract_ == 0x0000000000000000000000000000000000000000) {
-            depositContract = IDepositContract(0x3693693693693693693693693693693693693693);
+            depositContract = IDepositContract(0xeD9aE17bDAB18bd71B1cf0283933A1F43507c09E);
         } else {
             depositContract = IDepositContract(depositContract_);
         }
